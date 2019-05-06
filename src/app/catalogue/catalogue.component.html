@@ -1,0 +1,21 @@
+<header>
+  <div class="title">
+    <h1>In a galaxy far, far away...</h1>
+  </div>
+</header>
+<body>
+  <!--Loading icon-->
+  <mat-spinner *ngIf="showLoader" class="loader"></mat-spinner>
+  <ul *ngIf="showLoader == false">
+    <li *ngFor="let character of characters.results">
+      <p class="attribute">Name: </p><p class="info">{{character.name}}</p>
+      <p class="attribute">Height: </p><p class="info">{{character.height}}</p>
+      <p class="attribute">Birth Year: </p><p class="info">{{character.birth_year}}</p>
+      <p class="attribute">Gender: </p><p class="info">{{character.gender}}</p>
+    </li>
+  </ul>
+  <div class="container">
+    <button (click)="prev()"><<</button>
+    <button (click)="next()">>></button>
+  </div>
+</body>

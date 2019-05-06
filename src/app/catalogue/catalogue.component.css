@@ -1,0 +1,33 @@
+ul {
+  list-style-type: none;
+  margin-left: 8em;
+  margin-right: 8em;
+  padding: 0;
+}
+
+li {
+  background: rgba(238, 238, 238, 0.2);
+  padding: 1em;
+  border-radius: 4px;
+  margin-bottom: 7px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+p {
+  font-weight: bold;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  color: white;
+}
+
+.attribute {
+  display: inline;
+  color: rgb(204, 218, 229);
+  text-align: left;
+}
+.info {
+  display: inline;
+  text-align: right;
+}
